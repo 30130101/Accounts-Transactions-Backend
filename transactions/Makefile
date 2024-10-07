@@ -4,10 +4,10 @@ install:
 	pip install --upgrade pip && pip install -r requirements.txt
 
 format:
-	black *.py service/*.py
+	black *.py
 
 lint:
-	pylint --errors-only --disable=R,C *.py service/*.py
+	pylint --errors-only --disable=R,C *.py
 
 test:
 	python -m pytest tests
