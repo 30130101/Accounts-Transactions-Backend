@@ -1,6 +1,7 @@
 
-Description: 
-Background:
+## Description: 
+
+### Background:
   This is a simple backend application consisting of two services: accounts and transactions. 
   The accounts service exposes two API:s, one that accepts the user information (customerID, initialCredit)
   and opens a new “current account” of already existing customers, and another that shows the user info Name, Surname, balance,
@@ -10,12 +11,12 @@ Background:
   
   The transactions service is only aimed to create a tansaction when called and outputs the transaction data to the console.
 
-Setup:
+### Setup:
   The services run on docker containers that can be run and interact with eachother within the same docker network. 
   The data used to test the services are saved in memory as dummy_data, i.e no database connections used
   
 
-How to run: 
+### How to run: 
   Run both of the services seperately following the same following procedures. 
   Create a virtual environment using ```python3 -m venv .venv``` and activate ```source .venv/bin/activate```
   In both of the services, and an .env file with PORT=<your_port>.
@@ -27,14 +28,14 @@ How to run:
   ```
   to run the docker app. Make sure to have the docker deamon running in the background.
 
-Test senarios:
+### Test senarios:
   Goto http://127.0.0.1:5000/new_account/1/0 to create an account with no transaction for user with ID 1.
   View the user data you modified by fetching http://127.0.0.1:5000/user_info/1
 
   Goto http://127.0.0.1:5000/new_account/1/3 to create a transaction with amount 3 and fetch the user data 
   to see all the accounts and their transactions for the user, and the updated balance.
 
-Example user data:
+### Example user data:
 ```
 [
     {
@@ -129,7 +130,7 @@ Example user data:
 ]
 ```
 
-Improvement suggestions:
+### Improvement suggestions:
   Create tests using pytest
   Use docker compose
   Add additional API:s
