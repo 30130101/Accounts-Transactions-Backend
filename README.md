@@ -19,7 +19,7 @@
 ### How to run: 
   Run both of the services seperately following the same following procedures. 
   Create a virtual environment using ```python3 -m venv .venv``` and activate ```source .venv/bin/activate```
-  In both of the services, and an .env file with PORT=<your_port>.
+  In both of the services, add an .env file with PORT=<your_port>.
   Run 
   ```
     make install
