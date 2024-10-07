@@ -131,7 +131,7 @@
 ```
 
 ### Improvement suggestions:
-  Create tests using pytest
-  Use docker compose
-  Add additional API:s
-  Add logging  
+  * Create tests using pytest
+  * Use docker compose
+  * Add additional API:s
+  * Add logging  
